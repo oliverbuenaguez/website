@@ -2,108 +2,37 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>La Samaria - El Sabor Costeño</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL PAISA - Comidas rápidas</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="grid-container">
-    <!-- Header -->
+    
     <header>
-      <img class="header-logo" src="image/logo.png" alt="logo Samaria">
-      <!--El NAV está por fuera de grid, lo deje para más adelante-->
-      <nav class="navbar">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#menu">Menú</a></li>
-          <li><a href="#promos">Promociones</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+            
+            <!-- Logo -->
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo La Samaria ">
+            </div>
+            
+            <!-- Truco del checkbox -->
+            <label for="menu-toggle" class="hamburguesa">☰</label>
+            <input class="menu-toggle" type="checkbox" id="menu-toggle">
+            
+            <!-- Menú -->
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            
+        </nav>
     </header>
-
-    <!-- Sección principal -->
-    <main>
-      <section class="section-inicio" id="inicio">
-        <h2>¡Aprovecha Nuestras Promociones!</h2>
-        <img src="image/main-imag.webp" alt="">
-        <button>Haz tu pedido ahora</button>
-      </section>
-
-      <!-- Menú -->
-      <section id="menu">
-        <h2>Menú</h2>
-
-        <article>
-          <h3>🍔 Hamburguesa Clásica</h3>
-          <p>Carne 100% res, queso, lechuga, tomate y salsa especial.</p>
-          <p>Precio: $12.000</p>
-          <button>Agregar al pedido</button>
-        </article>
-
-        <article>
-          <h3>🌭 Perro Americano</h3>
-          <p>Salchicha, cebolla, papas, salsas y pan artesanal.</p>
-          <p>Precio: $9.000</p>
-          <button>Agregar al pedido</button>
-        </article>
-
-        <!-- Puedes seguir agregando más platos -->
-      </section>
-
-      <!-- Promociones -->
-      <section id="promos">
-        <h2>Promociones</h2>
-        <ul>
-          <li>🎉 Combo 2x1 todos los martes</li>
-          <li>🍟 Combo familiar por $30.000</li>
-          <li>🥤 Gratis bebida por compras mayores a $20.000</li>
-        </ul>
-      </section>
-
-      <!-- Testimonios -->
-      <section>
-        <h2>Opiniones de nuestros clientes</h2>
-        <blockquote>
-          ⭐⭐⭐⭐⭐ "Riquísimo y rápido" – Juan P.
-        </blockquote>
-        <blockquote>
-          ⭐⭐⭐⭐ "Me encantaron las papas" – Laura M.
-        </blockquote>
-      </section>
-
-      <!-- Ubicación y contacto -->
-      <section id="contacto">
-        <h2>Ubicación y Contacto</h2>
-        <p>📍 Calle 123, Ciudad</p>
-        <p>📞 Teléfono: +57 301 000 0000</p>
-        <p>🟢 WhatsApp: Disponible 24/7</p>
-        <p>[Aquí iría el mapa de Google Maps]</p>
-      </section>
-
-      <!-- Formulario de contacto -->
-      <section>
-        <h2>Escríbenos</h2>
-        <form>
-          <label>Nombre:</label><br>
-          <input type="text" name="nombre"><br>
-          <label>Teléfono o correo:</label><br>
-          <input type="text" name="contacto"><br>
-          <label>Mensaje:</label><br>
-          <textarea name="mensaje"></textarea><br>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 La Samaria - El Sabor Costeño</p>
-      <p>Síguenos: Facebook | Instagram | TikTok</p>
-    </footer>
-
-  </div>
+    
 </body>
 
 </html>
