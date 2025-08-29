@@ -1,4 +1,4 @@
-# GUIA DE PAGINÁ WEB [ (KFC)](https://donderafa.com/#)
+# GUIA DE PAGINÁ WEB [ (KFC)](https://www.elcorral.com/)
 
 ## MOBIL A ESCRITORIO
 

@@ -1,16 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHARIBARI | Comidas Rapidas</title>
+  <title>Comidas Rápidas</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <header class="header">
 
-  </header>
+  <!-- ====== NAV ====== -->
+  <nav>
+    <!-- Logo a la izquierda -->
+    <div class="logo">
+      <img src="assets/img/logo-white.png" alt="Logo Comida Rápida">
+    </div>
+
+    <!-- Nombre en el centro -->
+    <div class="brand-name">CHARIBARI</div>
+
+    <!-- Menú hamburguesa a la derecha -->
+    <!-- Usamos el símbolo ☰ como hamburguesa -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Menú desplegable que ocupa la pantalla -->
+  <div class="menu" id="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="#">Promociones</a>
+    <a href="#">Contacto</a>
+  </div>
+
+  <!-- ====== CONTENIDO ====== -->
+  <main>
+    <h1>Bienvenido a Mi Comida Rápida</h1>
+    <p>Aquí encontrarás las mejores hamburguesas y comidas rápidas.</p>
+  </main>
+
+  <!-- ====== SCRIPT SIMPLE PARA MOSTRAR/OCULTAR MENÚ ====== -->
+  <script>
+    function toggleMenu() {
+      // Obtenemos el menú
+      const menu = document.getElementById("menu");
+      // Si está oculto, lo mostramos. Si está visible, lo ocultamos.
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 
