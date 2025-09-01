@@ -5,9 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/test.css">
 </head>
 
 <body>
+  <section class="slider">
+    <!-- Botones ocultos -->
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <!-- Contenedor de imágenes -->
+    <div class="slides">
+      <div class="slide"><img src="assets/img/hamburguer.jpg" alt="Hamburguesa 1"></div>
+      <div class="slide"><img src="assets/img/hot-dog.jpg" alt="Hamburguesa 2"></div>
+      <div class="slide"><img src="assets/img/salchipapas.jpg" alt="Hamburguesa 3"></div>
+    </div>
+
+    <!-- Controles (punticos) -->
+    <div class="navigation">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </section>
+
 
 </body>
 
