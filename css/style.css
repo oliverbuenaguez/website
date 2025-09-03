@@ -186,3 +186,50 @@ input[type="radio"] {
 #slide3:checked ~ .navigation label[for="slide3"] {
   background: #0074d9;
 }
+
+/* MENÚ */
+
+.menu-section {
+  margin: 2rem 0 0 1rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex: 1 1 200px;
+  /* Crece y se encoge, con un tamaño base de 200px */
+  margin: 0.5rem;
+  /* Espaciado entre elementos */
+  border: 6px solid var(--secondary-color);
+  /*   padding: 0.5rem; */
+  /* Espaciado interno */
+  background-color: var(--secondary-color);
+  /* Fondo azul oscuro */
+  color: var(--background-color);
+  /* Texto blanco */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px 5px 0 0; /* Solo esquinas superiores redondeadas */
+}
+
+.menu-item h4 {
+  margin: 0;
+  padding: 0.5rem 0.2rem 0;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 0 0 5px 5px; /* Redondea solo abajo */
+}
