@@ -45,7 +45,7 @@ section {
 
 /* Logo (a la izquierda) */
 .logo img {
-  width: 65px;
+  width: 60px;
   /* Tamaño del logo */
   height: auto;
   margin-top: 1rem;
@@ -69,6 +69,7 @@ section {
 
 /* MAIN */
 .navbar-section {
+  z-index: 1;
   position: sticky;
   top: var(--nav-height);
   display: flex;
@@ -90,6 +91,14 @@ section {
   background: var(--background-color);
   padding: 2px;
   border-radius: 5px;
+}
+
+.navbar-menu {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-menu:hover {
+  transform: scale(1.04);
 }
 
 .navbar-menu a {
@@ -154,11 +163,11 @@ section {
   padding-left: 1rem;
 }
 
-img {
+.menu-section img {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-img:hover {
+.menu-section img:hover {
   transform: scale(1.04);
 }
 
