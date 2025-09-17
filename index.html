@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charibari Comidas Rápidas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav>
+    <!-- Logo a la izquierda -->
+    <div class="logo">
+      <img src="assets/img/logo-white.png" alt="Logo Comida Rápida">
+    </div>
+
+    <!-- Nombre en el centro -->
+    <h1 class="brand-name">CHARIBARI</h1>
+
+    <!-- Menú hamburguesa a la derecha -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Menú desplegable que ocupa la pantalla -->
+  <div class="menu" id="menu">
+    <a href="index.html" onclick="closeMenu()">Inicio</a>
+    <a href="menu.html" onclick="closeMenu()">Menú</a>
+    <a href="index.html#promo" onclick="closeMenu()">Promociones</a>
+    <a href="#contacto" onclick="closeMenu()">Contacto</a>
+  </div>
+
+  <!-- ====== CONTENIDO ====== -->
+  <main>
+    <!-- CARRUSEL -->
+    <section class="slider">
+      <!-- Botones ocultos -->
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+
+      <!-- Contenedor de imágenes -->
+      <div class="slides">
+        <div class="slide"><a href="index.html#promo1"><img src="assets/img/promo-hamburguesa.jpg"
+              alt="Hamburguesa 1"></a></div>
+        <div class="slide"><a href="index.html#promo2"><img src="assets/img/promo-hotdog.jpg" alt="Hamburguesa 2"></a>
+        </div>
+        <div class="slide"><a href="index.html#promo3"><img src="assets/img/promo-pizza.jpg" alt="Hamburguesa 3"></a>
+        </div>
+      </div>
+
+      <!-- Controles (punticos) -->
+      <div class="navigation">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section class="menu-section">
+      <h2>Nuestro <a href="menu.html" target="_blank">MENÚ</a></h2>
+    </section>
+
+    <section class="menu-container">
+      <div class="menu-item">
+        <a href="menu.html#hamburguesa"><img src="assets/img/hamburguer.jpg" alt="Hamburguer">
+          <h4>Hamburguesa</h4>
+        </a>
+      </div>
+      <div class="menu-item"><a href="menu.html#hotdogs"><img src="assets/img/hot-dog.jpg" alt="hot-dog">
+          <h4>Hot Dog</h4>
+        </a>
+      </div>
+      <div class="menu-item"><a href="menu.html#salchipapas"><img src="assets/img/salchipapas.jpg" alt="salchipapas">
+          <h4>Salchipapas</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html#sandwich"><img src="assets/img/sandwich.jpg" alt="SANDWICH"></a>
+        <h4>Sandwich</h4>
+      </div>
+      <div class="menu-item"><a href="menu.html#pizzas"><img src="assets/img/pizza.jpg" alt="hot-dog">
+          <h4>Pizzas</h4>
+        </a>
+      </div>
+      <div class="menu-item"><a href="menu.html#combos"><img src="assets/img/salchipapas.jpg" alt="salchipapas">
+          <h4>Combos</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html#bebidas"><img src="assets/img/menu-bebidas.png" alt="Hamburguer">
+          <h4>Bebidas</h4>
+        </a>
+      </div>
+      <div class="menu-item"><a href="menu.html#acompanamientos"><img src="assets/img/acompañamiento.png" alt="hot-dog">
+          <h4>Acompañamientos</h4>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROMOCIONES -->
+    <section class="promo" id="promo">
+      <h2>Promociones Especiales</h2>
+      <div class="promo-container">
+        <!-- Promo 1 -->
+        <div class="promo-card" id="promo1">
+          <img src="assets/img/promo-hamburguesa.jpg" alt="Promo Hamburguesa">
+          <div class="promo-content">
+            <h3>Combo Hamburguesa + Papas + Gaseosa</h3>
+            <p>¡El clásico que nunca falla!</p>
+            <span class="price">$18.900</span>
+          </div>
+        </div>
+        <!-- Promo 2 -->
+        <div class="promo-card" id="promo2">
+          <img src="assets/img/promo-hotdog.jpg" alt="Promo Hot Dog">
+          <div class="promo-content">
+            <h3>2 Perros Calientes + Gaseosa 1.5L</h3>
+            <p>Perfecto para compartir 🍴</p>
+            <span class="price">$22.500</span>
+          </div>
+        </div>
+        <!-- Promo 3 -->
+        <div class="promo-card" id="promo3">
+          <img src="assets/img/promo-pizza.jpg" alt="Promo Pizza">
+          <div class="promo-content">
+            <h3>Pizza Familiar + 2 Gaseosas</h3>
+            <p>Ideal para toda la familia</p>
+            <span class="price">$35.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACTO ====== -->
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <div class="contact-container">
+        <p>¿Tienes alguna duda o comentario? Escríbenos:</p>
+        <form class="contact-form">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Sección 1: Sobre nosotros -->
+      <div class="footer-section">
+        <h3>Charibari</h3>
+        <p>Comidas rápidas hechas con amor y el mejor sabor. ¡Tu antojo, nuestra misión!</p>
+      </div>
+
+      <!-- Sección 2: Enlaces -->
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html" onclick="closeMenu()">Inicio</a></li>
+          <li><a href="menu.html" onclick="closeMenu()">Menú</a></li>
+          <li><a href="index.html#promo" onclick="closeMenu()">Promociones</a></li>
+          <li><a href="index.html#contacto" onclick="closeMenu()">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Sección 3: Redes sociales -->
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <!-- Copia esto dentro del footer o donde quieras mostrar redes -->
+        <div class="social-links">
+          <a href="https://www.facebook.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <!-- Facebook SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+              <path
+                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+              </path>
+            </svg>
+          </a>
+
+          <a href="https://x.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <!-- X (Twitter) SVG simplified -->
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 5.92c-.63.28-1.3.47-2.01.56.72-.43 1.27-1.1 1.53-1.9-.68.4-1.43.7-2.23.86A3.53 3.53 0 0016.15 4c-1.93 0-3.5 1.6-3.5 3.57 0 .28.03.56.1.82C9.1 8.25 6.13 6.5 4.04 4c-.31.53-.5 1.14-.5 1.8 0 1.24.64 2.34 1.62 2.98-.6 0-1.17-.18-1.66-.46v.05c0 1.73 1.23 3.17 2.86 3.5-.3.08-.62.12-.95.12-.23 0-.46-.02-.68-.07.46 1.45 1.79 2.5 3.37 2.53A7.07 7.07 0 013 19.54 9.94 9.94 0 008.29 21c6.62 0 10.25-5.6 10.25-10.45v-.48c.72-.52 1.34-1.17 1.84-1.92-.66.3-1.37.5-2.1.59z" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">
+            <!-- Instagram SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+              </path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Charibari Comidas Rápidas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ====== SCRIPT SIMPLE PARA MOSTRAR/OCULTAR MENÚ ====== -->
+  <script src="javascript/index.js"></script>
+
+</body>
+
+</html>
